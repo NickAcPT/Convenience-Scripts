@@ -24,9 +24,15 @@
 ^+LButton::SendInput #^{Left}
 ^+RButton::SendInput #^{Right}
 
-^+F10::Media_Prev
-^+F11::Media_Play_Pause
-^+F12::Media_Next
+^+F10::
+Send {Media_Prev}
+return
+^+F11::
+Send {Media_Play_Pause}
+return
+^+F12::
+Send {Media_Next}
+return
 
 ^+PgUp::Volume_Up
 ^+PgDn::Volume_Down
